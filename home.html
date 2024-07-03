@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnCraze - Education That Fits Your Lifestyle</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .banner {
+            width: 100%;
+            height: 95vh;
+            background-image: linear-gradient(
+                rgba(0, 0, 0, 0.75),
+                rgba(0, 0, 0, 0.75)
+            ),
+            url('/static/background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff; 
+        }
+        .navbar {
+            width: 85%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            color: #fe0606;
+            font-size: 40px;
+            font-weight: 700;
+            letter-spacing: 3px;
+        }
+        span {
+            color: white;
+        }
+        form {
+            width: 300px;
+            height: 40px;
+            display: flex;
+            background: rgb(75, 75, 75);
+            padding: 1px 1px;
+            font-size: 15px;
+            border-radius: 10px;
+            backdrop-filter: blur(4px) saturate(180%);
+        }
+        form input {
+            background: transparent;
+            flex: 1;
+            border: 0;
+            outline: none;
+            padding: 12px 20px;
+            font-size: 15px;
+            color: white;
+        }
+        ::placeholder {
+            color: white;
+        }
+        form button {
+            border: 0;
+            outline: none;
+            padding: 5px 20px;
+            color: white;
+            border-radius: 10px;
+            background: #ff48f6;
+            cursor: pointer;
+        }
+        #search.hover {
+            border: 1px;
+            padding: 10px;
+
+            transition: 0.5s;
+            cursor: pointer;
+            border-radius: 30px;
+            background: rgb(245, 91, 212);
+            color: #15035e;
+            box-shadow: 0 0 20px rgb(245, 72, 219);
+        }
+        .navbar li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+        }
+        .navbar li:hover {
+            border: 1px;
+            padding: 10px;
+
+            transition: 0.5s;
+            cursor: pointer;
+            border-radius: 30px;
+            background: rgb(246, 71, 234);
+            color: #081b29;
+            box-shadow: 0 0 20px rgb(252, 59, 239);
+        }
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .text h2 {
+            color: #f5f6f5;
+            font-weight: 800;
+            font-size: 40px; 
+            letter-spacing: 3px;
+        }
+        .text p {
+            color: white;
+            text-transform: capitalize;
+            font-size: 15px;
+            margin-bottom: 30px;
+            word-spacing: 2px;
+            letter-spacing: 1px;
+        }
+        .login {
+            margin: 0px 10px;
+            border: 2px solid #f951f6;
+            padding: 13px 35px;
+            letter-spacing: 1px;
+            color: white;
+            border-radius: 30px;
+            background-color: #60d0f9;
+            text-decoration: none;
+        }
+        .login:hover {
+            border: 2px solid #fc5ff4;
+            color: #fa52ec;
+            background-color: white;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        .signup {
+            margin: 0px 10px;
+            border: 2px solid #fa55e2;
+            padding: 13px 35px;
+            letter-spacing: 1px;
+            color: white;
+            border-radius: 30px;
+            background-color: #fc52d7;
+            text-decoration: none;
+        }
+        .signup:hover {
+            border: 2px solid #2b07fa;
+            color: #f45dfe;
+            background-color: white;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        footer {
+            border: 1px;
+            padding: 10px;
+
+            transition: 0.5s;
+            cursor: pointer;
+            border-radius: 30px;
+            background: rgb(252, 18, 237);
+            color: #081b29;
+            box-shadow: 0 0 20px rgb(245, 50, 219);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="banner">
+    <br />
+    <div class="navbar">
+        <h1 class="logo">T<span>ECH</span>S<span>OCIETY</span></h1>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'products' %}">Products</a></li>
+          <li><a href="{% url 'people' %}">People</a></li>
+          <li><a href="{% url 'contact' %}"> Contact </a></li>
+        </ul>
+        <form action="" method="get">
+            <input type="text" placeholder="Enter to Search" />
+            <button id="search" type="submit">Search</button>
+        </form>
+    </div>
+    <div class="content">
+        <div class="text">
+            <h2>
+                Investing in tomorrow’s technology today is more critical than ever…
+            </h2>
+            <br />
+
+            <br />
+            <div>
+                <a href="#" class="login"> Log In </a>
+                <a href="#" class="signup"> Sign Up </a>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <center>Designed and Developed by PRAKASH P (212221040126)</center>
+</footer>
+</body>
+</html>
