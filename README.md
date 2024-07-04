@@ -1,5 +1,6 @@
 # CSS-Basic-Project
 # home.html
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -212,11 +213,12 @@
 </footer>
 </body>
 </html>
-
+```
 # output
 ![css home](https://github.com/PrakashG-2002/CSS-Basic-Project/assets/144507749/b721215b-25f5-4751-b77c-429275fcad89)
 
 # contact.html
+```html
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -459,11 +461,12 @@
     </footer>
   </body>
 </html>
-
+```
 # output
 ![css contact](https://github.com/PrakashG-2002/CSS-Basic-Project/assets/144507749/ca70b34b-457a-40bd-82c7-bd7b08ccf0b4)
 
 # product.html
+```html
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -684,11 +687,12 @@
     </footer>
   </body>
 </html>
-
+```
 # output
 ![css product](https://github.com/PrakashG-2002/CSS-Basic-Project/assets/144507749/891ca340-97ef-49d7-8d88-27e3a17cff09)
 
 # people.html
+```html
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -873,7 +877,7 @@
     </footer>
   </body>
 </html>
-
+```
 # output
 ![css people](https://github.com/PrakashG-2002/CSS-Basic-Project/assets/144507749/a85aacbf-3841-4209-9eca-d84a4c9bd2f4)
 
